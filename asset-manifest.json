@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/spiderverse-lp/static/css/main.a62bb52f.css",
+    "main.js": "/spiderverse-lp/static/js/main.4ac9863b.js",
+    "index.html": "/spiderverse-lp/index.html",
+    "main.a62bb52f.css.map": "/spiderverse-lp/static/css/main.a62bb52f.css.map",
+    "main.4ac9863b.js.map": "/spiderverse-lp/static/js/main.4ac9863b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a62bb52f.css",
+    "static/js/main.4ac9863b.js"
+  ]
+}
