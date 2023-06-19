@@ -1,4 +1,5 @@
 import CastCard from "../UI/CastCard";
+import { motion } from "framer-motion";
 
 const CAST = [
     {
@@ -40,8 +41,32 @@ const CAST = [
 ];
 
 const Cast = () => {
+    const castTitleVariants = {
+        offscreen: {
+            opacity: 0,
+            y: 10
+        },
+        onscreen: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8
+            }
+        }
+    };
+
     return <div className="mt-8 lg:pt-8">
-        <h3 className="font8 text-glitch-blue text-6xl text-center mb-4">CAST</h3>
+        <motion.h3
+            className="font8 text-glitch-blue text-6xl text-center mb-4"
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.4 }}
+            variants={castTitleVariants}
+        >
+            CAST
+        </motion.h3>
         <div className="grid grid-cols-cast justify-items-center gap-8 max-w-4xl mx-auto">
             {CAST.map((character) => <CastCard
                 key={character.id}

@@ -17,12 +17,28 @@ const Description = () => {
         }
     };
 
+    const descripVariants = {
+        offscreen: {
+            opacity: 0,
+            y: -10
+        },
+        onscreen: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8
+            }
+        }
+    };
+
     return <div className="max-w-screen-lg mx-auto lg:flex">
         <motion.div
             className="flex justify-center lg:justify-start"
             initial="offscreen"
             whileInView="onscreen"
-            viewport={{ once: true, amount: 0.8 }}
+            viewport={{ once: true, amount: 0.6 }}
         >
             <motion.img
                 src="./images/miles2.png"
@@ -31,7 +47,12 @@ const Description = () => {
                 variants={milesVariants}
             />
         </motion.div>
-        <div>
+        <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={descripVariants}
+        >
             <h2 className="text-miles-red text-center text-4xl font1 font-semibold lg:pt-8">
                 SPIDER-VERSE
             </h2>
@@ -42,7 +63,7 @@ const Description = () => {
                 But when the heroes clash on how to handle a new threat, Miles finds himself pitted against the other Spiders and must set
                 out on his own to save those he loves most. Anyone can wear the mask &minus; it&#x2019;s how you wear it that makes you a hero.
             </p>
-        </div>
+        </motion.div>
     </div>;
 };
 
