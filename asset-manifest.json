@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/spiderverse-lp/static/css/main.aef7d8d8.css",
-    "main.js": "/spiderverse-lp/static/js/main.7aa3e5a9.js",
+    "main.css": "/spiderverse-lp/static/css/main.402e3a2c.css",
+    "main.js": "/spiderverse-lp/static/js/main.41822ce5.js",
     "index.html": "/spiderverse-lp/index.html",
-    "main.aef7d8d8.css.map": "/spiderverse-lp/static/css/main.aef7d8d8.css.map",
-    "main.7aa3e5a9.js.map": "/spiderverse-lp/static/js/main.7aa3e5a9.js.map"
+    "main.402e3a2c.css.map": "/spiderverse-lp/static/css/main.402e3a2c.css.map",
+    "main.41822ce5.js.map": "/spiderverse-lp/static/js/main.41822ce5.js.map"
   },
   "entrypoints": [
-    "static/css/main.aef7d8d8.css",
-    "static/js/main.7aa3e5a9.js"
+    "static/css/main.402e3a2c.css",
+    "static/js/main.41822ce5.js"
   ]
 }
