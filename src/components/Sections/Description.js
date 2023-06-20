@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Title from "../UI/Title";
 
 const Description = () => {
     const milesVariants = {
@@ -53,9 +54,7 @@ const Description = () => {
             viewport={{ once: true, amount: 0.3 }}
             variants={descripVariants}
         >
-            <h2 className="text-miles-red text-center text-4xl font1 font-semibold lg:pt-8">
-                SPIDER-VERSE
-            </h2>
+            <Title title={"SPIDER-VERSE"} fontType={"font1"} />
             <p className="p-8 text-sm font-bold leading-5 max-w-3xl mx-auto">
                 Miles Morales returns for the next chapter of the Oscar®-winning Spider-Verse saga, <em>Spider-Man™: Across the Spider-Verse</em>.
                 After reuniting with Gwen Stacy, Brooklyn&#x2019;s full-time, friendly neighborhood Spider-Man is catapulted across the Multiverse,

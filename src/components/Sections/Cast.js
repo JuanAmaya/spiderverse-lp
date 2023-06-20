@@ -1,5 +1,6 @@
 import CastCard from "../UI/CastCard";
 import { motion } from "framer-motion";
+import Title from "../UI/Title";
 
 const CAST = [
     {
@@ -58,15 +59,15 @@ const Cast = () => {
     };
 
     return <div className="mt-8 lg:pt-8">
-        <motion.h3
-            className="font8 text-glitch-blue text-6xl text-center mb-4"
+        <motion.div
+            className="mb-4"
             initial="offscreen"
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.4 }}
             variants={castTitleVariants}
         >
-            CAST
-        </motion.h3>
+            <Title title={"CAST"} fontType={"font8"} />
+        </motion.div>
         <div className="grid grid-cols-cast justify-items-center gap-8 max-w-4xl mx-auto">
             {CAST.map((character) => <CastCard
                 key={character.id}

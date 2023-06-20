@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Title from "../UI/Title";
 
 const Trailer = () => {
     const gwenVariants = {
@@ -90,12 +91,12 @@ const Trailer = () => {
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.4 }}
         >
-            <motion.h2
-                className="text-4xl text-center text-glitch-green font-semibold py-4 font2"
+            <motion.div
+                className="my-4"
                 variants={trailerTitleVariants}
             >
-                TRAILER
-            </motion.h2>
+                <Title title={"TRAILER"} fontType={"font2"} />
+            </motion.div>
             <motion.iframe
                 src="https://www.youtube.com/embed/shW9i6k8cB0?controls=1"
                 title="Spiderman: Across the Spiderverse trailer"

@@ -19,7 +19,10 @@ module.exports = {
         "miles-blue": "#141F40",
         "gwen-pink": "#D7427D",
         "miguel-blue": "#001144",
-        "miguel-red": "#C51021"
+        "miguel-red": "#C51021",
+        "comic-yellow": "#F6C634",
+        "comic-brown": "#210D03",
+        "comic-bg": "#DED2CC"
       },
       height: {
         "videoBG": "95vh",
